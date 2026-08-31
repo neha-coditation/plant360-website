@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckmarkOutline, DataShare, ChartLineData, UserMultiple } from "@carbon/icons-react";
+import { CheckmarkOutline, DataShare, ChartLineData, UserMultiple } from "@carbon/icons-react";
 import { buildMetadata } from "@/lib/seo";
 import { proofPoints, outcomeMetrics } from "@/content/proof";
 import { Section } from "@/components/ui/Section";
