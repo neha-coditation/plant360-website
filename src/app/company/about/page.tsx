@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo";
 import { proofPoints, outcomeMetrics } from "@/content/proof";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading, FeatureGrid, StatGrid } from "@/components/page/blocks";
-import { CtaBand } from "@/components/page/blocks";
+import { CtaBand } from "@/components/sections/CtaBand";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import styles from "./about.module.scss";
 
@@ -21,6 +21,8 @@ const breadcrumbs = [
   { name: "Company", path: "/company/about" },
   { name: "About", path: "/company/about" },
 ];
+
+
 
 const arcStages = [
   { title: "Software-aided", text: "Documents scattered across systems; people do the reconciling by hand." },
