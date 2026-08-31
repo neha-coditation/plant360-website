@@ -22,12 +22,7 @@ const breadcrumbs = [
   { name: "About", path: "/company/about" },
 ];
 
-const stackRows: { kind: string; name: string; note: string; accent?: boolean }[] = [
-  { kind: "01 · Input", name: "Documents", note: "P&IDs, datasheets, records" },
-  { kind: "02 · Pipeline", name: "Convert + UniGraph", note: "One pipeline, both outputs" },
-  { kind: "03 · Output A", name: "System of record", note: "Authoritative, audit-ready" },
-  { kind: "04 · Output B", name: "Asset knowledge graph", note: "Live, queryable by AI agents", accent: true },
-];
+
 
 const heroStats = [
   { num: "50%+", label: "Efficiency gains across engineering, operations and safety" },
