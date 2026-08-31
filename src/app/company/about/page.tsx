@@ -6,7 +6,7 @@ import { proofPoints, outcomeMetrics } from "@/content/proof";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading, FeatureGrid, StatGrid } from "@/components/page/blocks";
 import { CtaButton } from "@/components/ui/CtaButton";
-import { CtaBand } from "@/components/sections/CtaBand";
+
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import styles from "./about.module.scss";
 
