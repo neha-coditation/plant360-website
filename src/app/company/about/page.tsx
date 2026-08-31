@@ -22,15 +22,6 @@ const breadcrumbs = [
   { name: "About", path: "/company/about" },
 ];
 
-
-
-const heroStats = [
-  { num: "50%+", label: "Efficiency gains across engineering, operations and safety" },
-  { num: "83,000+", label: "Engineering drawings digitized" },
-  { num: "250,000+", label: "Datasheets and specifications digitized" },
-  { num: "ISO 27001", label: "Certified, and built so you own your data" },
-];
-
 const arcStages = [
   { title: "Software-aided", text: "Documents scattered across systems; people do the reconciling by hand." },
   { title: "Intelligent", text: "Data is structured and connected, so engineers and agents can query it directly." },
