@@ -1,0 +1,94 @@
+// CSS-first animations lifted from the approved reference. Every consumer must
+// also honor prefers-reduced-motion (see the reduce block at the end, plus
+// component-level guards for JS-driven motion).
+
+@keyframes p360rise {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  9% {
+    opacity: 1;
+  }
+  78% {
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(calc(-1 * var(--travel, 330px)));
+    opacity: 0;
+  }
+}
+
+@keyframes p360glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(15, 98, 254, 0);
+  }
+  50% {
+    box-shadow: 0 0 20px 2px rgba(15, 98, 254, 0.4);
+  }
+}
+
+@keyframes p360pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes p360marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes p360scan {
+  0% {
+    top: 6%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 88%;
+    opacity: 0;
+  }
+}
+
+@keyframes p360blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes p360dash {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

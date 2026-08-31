@@ -1,0 +1,43 @@
+// 404 layout. Sits inside a dark Section, so colors come from --sf-* vars.
+
+.wrap {
+  min-height: 52vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 640px;
+}
+
+.eyebrow {
+  font-family: var(--p360-font-mono);
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sf-eyebrow);
+  margin: 0 0 20px;
+}
+
+.title {
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--sf-fg);
+  margin: 0;
+}
+
+.body {
+  font-size: 18px;
+  line-height: 1.65;
+  font-weight: 300;
+  color: var(--sf-muted);
+  margin: 22px 0 0;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 36px;
+}

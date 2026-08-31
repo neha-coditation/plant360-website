@@ -1,0 +1,83 @@
+.arch {
+  border: 1px solid var(--sf-border);
+  background: var(--sf-surface);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  border-bottom: 1px solid var(--sf-border);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rowLabel {
+  padding: 20px 22px;
+  font-family: var(--p360-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sf-faint);
+  border-right: 1px solid var(--sf-border);
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 760px) {
+    border-right: none;
+    border-bottom: 1px solid var(--sf-border);
+    padding-bottom: 12px;
+  }
+}
+
+.cells {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1px;
+  background: var(--sf-border);
+}
+
+.cell {
+  background: var(--sf-surface-2);
+  padding: 18px 16px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--sf-fg);
+  display: flex;
+  align-items: center;
+  transition: background 0.2s var(--p360-ease-productive);
+
+  &:hover {
+    background: var(--sf-surface);
+  }
+}
+
+.cellAccent {
+  border: 1px solid var(--p360-accent);
+  color: var(--sf-accent-text);
+  font-weight: 500;
+}
+
+.cellMuted {
+  color: var(--sf-faint);
+  border: 1px dashed var(--sf-border);
+  background: transparent;
+}
+
+// The accent spine sits under the AI-platform row, spanning full width.
+.spine {
+  grid-column: 1 / -1;
+  background: var(--p360-accent);
+  color: #fff;
+  text-align: center;
+  padding: 12px 16px;
+  font-family: var(--p360-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

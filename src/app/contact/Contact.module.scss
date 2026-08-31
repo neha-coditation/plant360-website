@@ -1,0 +1,54 @@
+// Two-column contact layout. Colors inherit from the parent Section tone.
+
+.layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 64px;
+  align-items: start;
+
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.detailsIntro {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--sf-muted);
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 20px;
+  border-top: 1px solid var(--sf-border);
+}
+
+.itemLabel {
+  font-family: var(--p360-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sf-faint);
+}
+
+.itemLink {
+  font-size: 16px;
+  color: var(--sf-accent-text);
+  text-decoration: none;
+  width: fit-content;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}

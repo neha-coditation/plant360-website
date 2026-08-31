@@ -1,0 +1,12 @@
+{
+  "name": "Plant360.AI",
+  "short_name": "Plant360",
+  "description": "The full-stack industrial data and AI platform, from digitization to working agents.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#161616",
+  "theme_color": "#161616",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

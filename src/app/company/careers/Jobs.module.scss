@@ -1,0 +1,355 @@
+// Bespoke Company / Careers page. Colors read the parent Section's --sf-*
+// tokens so each band (dark / light / gray) adapts automatically.
+
+// ---- Shared primitives ----
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 24px;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--sf-accent-text);
+  font-weight: 600;
+}
+.eyebrowBar {
+  width: 20px;
+  height: 2px;
+  background: var(--p360-accent);
+  display: inline-block;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+// ---- Hero ----
+.hero {
+  max-width: 780px;
+}
+.title {
+  margin: 0 0 28px;
+  font-size: 50px;
+  line-height: 1.06;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  color: var(--sf-fg);
+  text-wrap: balance;
+
+  @media (max-width: 720px) {
+    font-size: 34px;
+  }
+}
+.lead {
+  margin: 0 0 36px;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--sf-muted);
+  max-width: 36em;
+}
+
+// ---- Mission (two-col) ----
+.missionGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: 64px;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.heading {
+  margin: 0 0 24px;
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  color: var(--sf-fg);
+  text-wrap: balance;
+}
+.copyText {
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--sf-muted);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Arc-to-autonomy panel (shared visual language with the About page)
+.arcPanel {
+  border: 1px solid var(--sf-border);
+  background: var(--sf-surface);
+}
+.arcHead {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--sf-border);
+  font-family: var(--p360-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--sf-faint);
+  text-transform: uppercase;
+}
+.arcStages {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.arcStage {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--sf-border);
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+.arcStageDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid var(--sf-border);
+  background: var(--sf-surface-2);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.arcStageActive {
+  background: var(--p360-accent);
+  border-color: var(--p360-accent);
+}
+.arcStageTitle {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--sf-fg);
+}
+.arcStageText {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--sf-muted);
+}
+.arcFoot {
+  padding: 14px 20px;
+  border-top: 1px solid var(--sf-border);
+  background: var(--sf-surface-2);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--sf-muted);
+}
+
+// ---- Pipeline (3-up) ----
+.pipeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--sf-border);
+  border: 1px solid var(--sf-border);
+
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
+}
+.pipeCard {
+  background: var(--sf-surface);
+  padding: 32px;
+}
+.pipeTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.pipeNum {
+  font-family: var(--p360-font-mono);
+  font-size: 12px;
+  color: var(--sf-faint);
+}
+.pipeIcon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--sf-border);
+  color: var(--sf-accent-text);
+}
+.pipeTitle {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--sf-fg);
+}
+.pipeText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--sf-muted);
+}
+
+// ---- Open roles ----
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.job {
+  border: 1px solid var(--sf-border);
+  background: var(--sf-surface);
+  padding: 36px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: start;
+
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
+}
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.metaItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  padding: 0 10px;
+  border: 1px solid var(--sf-border);
+  color: var(--sf-muted);
+  font-size: 12px;
+  border-radius: 16px;
+}
+.title {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--sf-fg);
+  letter-spacing: -0.2px;
+}
+.body {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--sf-muted);
+  max-width: 60em;
+}
+.apply {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  min-width: 190px;
+  height: 48px;
+  padding: 0 16px;
+  background: var(--p360-accent);
+  color: #ffffff;
+  font-size: 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-decoration: none;
+
+  &:hover {
+    background: var(--sf-accent-text);
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.openApp {
+  background: #161616;
+  color: #ffffff;
+  padding: 32px 36px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.openAppCopy {
+  max-width: 44em;
+}
+.openAppTitle {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.openAppText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #c6c6c6;
+}
+.openAppLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  min-width: 220px;
+  height: 48px;
+  padding: 0 16px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #6f6f6f;
+  font-size: 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-decoration: none;
+
+  &:hover {
+    background: #ffffff14;
+    border-color: #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+// ---- Life at Plant360 (2x2) ----
+.cultureGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--sf-border);
+  border: 1px solid var(--sf-border);
+
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
+}
+.cultureCard {
+  background: var(--sf-surface);
+  padding: 36px;
+}
+.cultureIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--sf-border);
+  color: var(--sf-accent-text);
+  margin-bottom: 24px;
+}
+.cultureTitle {
+  margin: 0 0 12px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--sf-fg);
+}
+.cultureText {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--sf-muted);
+}

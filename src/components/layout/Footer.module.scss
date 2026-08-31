@@ -1,0 +1,126 @@
+.footer {
+  background: #0f0f0f;
+  border-top: 1px solid var(--p360-border);
+  padding-top: 72px;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+}
+
+.brand {
+  max-width: 320px;
+}
+
+.logo {
+  display: inline-flex;
+  color: var(--p360-text);
+}
+
+.brandText {
+  margin: 20px 0 24px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--p360-text-placeholder);
+}
+
+.social {
+  display: flex;
+  gap: 16px;
+
+  a {
+    color: var(--p360-text-secondary);
+    display: inline-flex;
+    transition: color 0.15s;
+
+    &:hover {
+      color: var(--p360-accent-40);
+    }
+  }
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.colTitle {
+  font-family: var(--p360-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--p360-text-helper);
+  margin: 0 0 20px;
+}
+
+.column a {
+  color: var(--p360-text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+
+  &:hover {
+    color: var(--p360-text);
+  }
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  border-top: 1px solid var(--p360-border);
+  color: var(--p360-text-placeholder);
+  font-family: var(--p360-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+
+  svg {
+    color: var(--p360-success);
+  }
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--p360-border);
+  color: var(--p360-text-helper);
+  font-size: 13px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.designedWith {
+  font-family: var(--p360-font-mono);
+  letter-spacing: 0.04em;
+}
+
+@media (min-width: 672px) {
+  .columns {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1056px) {
+  .top {
+    grid-template-columns: 320px 1fr;
+    gap: 80px;
+  }
+}

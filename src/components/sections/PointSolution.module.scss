@@ -1,0 +1,146 @@
+.section {
+  background: var(--p360-light-bg);
+  color: var(--p360-light-text);
+}
+
+.inner {
+  padding-block: clamp(64px, 8vw, 96px) 24px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(32px, 5vw, 64px);
+  align-items: center;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.eyebrow {
+  font-family: var(--p360-font-mono);
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--p360-accent);
+  margin: 0 0 22px;
+}
+
+.heading {
+  font-size: clamp(28px, 3.6vw, 46px);
+  font-weight: 300;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  margin: 0;
+
+  strong {
+    color: var(--p360-light-text);
+    font-weight: 500;
+  }
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--p360-light-text-secondary);
+  margin: 26px 0 0;
+  max-width: 720px;
+  font-weight: 300;
+}
+
+.compare {
+  border: 1px solid var(--p360-light-border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.points {
+  padding: 26px 24px;
+  border-right: 1px solid var(--p360-light-border);
+}
+
+.stackCol {
+  padding: 26px 24px;
+  background: var(--p360-light-bg-alt);
+}
+
+.colLabel {
+  font-family: var(--p360-font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--p360-light-text-muted);
+  margin-bottom: 18px;
+}
+
+.colLabelAccent {
+  color: var(--p360-accent);
+}
+
+.stackList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dashed {
+  border: 1px dashed var(--p360-light-border-strong);
+  padding: 11px 13px;
+  font-size: 13px;
+  color: var(--p360-light-text-muted);
+}
+
+.noConn {
+  font-family: var(--p360-font-mono);
+  font-size: 10px;
+  color: var(--p360-error);
+  letter-spacing: 0.08em;
+  padding-left: 2px;
+  text-transform: uppercase;
+}
+
+.stalls,
+.compounds {
+  font-family: var(--p360-font-mono);
+  font-size: 10.5px;
+  margin-top: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.stalls {
+  color: var(--p360-light-text-muted);
+}
+
+.compounds {
+  color: var(--p360-accent);
+}
+
+.stackRail {
+  position: relative;
+  padding-left: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: var(--p360-accent);
+  }
+}
+
+.solid {
+  border: 1px solid var(--p360-light-border-strong);
+  background: var(--p360-light-bg);
+  padding: 10px 13px;
+  font-size: 13px;
+  color: var(--p360-light-text);
+}
+
+.solidAccent {
+  border-color: var(--p360-accent);
+  font-weight: 500;
+}

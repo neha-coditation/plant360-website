@@ -1,0 +1,227 @@
+// ---------------------------------------------------------------------------
+// Carbon Design System: selective imports only (never the full bundle).
+// We pull the reset, grid, and just the component styles the site uses.
+// ---------------------------------------------------------------------------
+@use "@carbon/styles/scss/reset";
+@use "@carbon/styles/scss/theme";
+@use "@carbon/styles/scss/themes";
+@use "@carbon/styles/scss/grid";
+
+// Components actually rendered on the site.
+@use "@carbon/styles/scss/components/button";
+@use "@carbon/styles/scss/components/accordion";
+@use "@carbon/styles/scss/components/form";
+@use "@carbon/styles/scss/components/text-input";
+@use "@carbon/styles/scss/components/text-area";
+@use "@carbon/styles/scss/components/select";
+@use "@carbon/styles/scss/components/checkbox";
+@use "@carbon/styles/scss/components/tag";
+@use "@carbon/styles/scss/components/notification";
+
+// Our own tokens + keyframes.
+@use "../styles/tokens";
+@use "../styles/animations";
+
+// Site-wide Gray 100 dark theme: emit --cds-* custom properties for Carbon
+// components, applied globally.
+:root {
+  @include theme.theme(themes.$g100);
+}
+
+// ---------------------------------------------------------------------------
+// Base
+// ---------------------------------------------------------------------------
+html {
+  scroll-behavior: smooth;
+  // Offset in-page anchors below the sticky header + announcement bar.
+  scroll-padding-top: calc(var(--p360-header-h) + var(--p360-announce-h));
+}
+
+body {
+  margin: 0;
+  background: var(--p360-bg);
+  color: var(--p360-text);
+  font-family: var(--p360-font-sans);
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--p360-accent);
+  color: #fff;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+// Visible focus for keyboard users (Carbon-style focus ring).
+:focus-visible {
+  outline: 2px solid var(--p360-accent-40);
+  outline-offset: 2px;
+}
+
+// ---------------------------------------------------------------------------
+// Layout helpers
+// ---------------------------------------------------------------------------
+.p360-container {
+  max-width: var(--p360-maxw);
+  margin: 0 auto;
+  padding-inline: var(--p360-gutter);
+  width: 100%;
+}
+
+.p360-section {
+  padding-block: clamp(64px, 9vw, 120px);
+}
+
+// Skip link (a11y): hidden until focused.
+.p360-skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  background: var(--p360-accent);
+  color: #fff;
+  padding: 12px 20px;
+  font-family: var(--p360-font-mono);
+  font-size: 13px;
+
+  &:focus {
+    left: 16px;
+    top: 16px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Type helpers
+// ---------------------------------------------------------------------------
+.p360-eyebrow {
+  font-family: var(--p360-font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--p360-accent-40);
+  margin: 0;
+}
+
+.p360-kicker {
+  font-family: var(--p360-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--p360-text-helper);
+  margin: 0;
+}
+
+.p360-h1 {
+  font-weight: 300;
+  font-size: clamp(34px, 5.4vw, 54px);
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.p360-h2 {
+  font-weight: 300;
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 1.1;
+  letter-spacing: -0.018em;
+  margin: 0;
+}
+
+.p360-h3 {
+  font-weight: 400;
+  font-size: clamp(20px, 2.2vw, 22px);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.p360-lead {
+  font-size: clamp(16px, 2vw, 18px);
+  line-height: 1.55;
+  color: var(--p360-text-secondary);
+  margin: 0;
+}
+
+.p360-body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--p360-text-secondary);
+}
+
+.p360-metric {
+  font-family: var(--p360-font-mono);
+  color: var(--p360-accent-40);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+// ---------------------------------------------------------------------------
+// Scroll-reveal micro-interactions. Elements start hidden ONLY once JS flags
+// <html> as reveal-ready, so the static/no-JS output stays fully visible and
+// crawlable. Disabled entirely under reduced-motion (reveal-static).
+// ---------------------------------------------------------------------------
+html.reveal-ready:not(.reveal-static) [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s var(--p360-ease-expressive),
+    transform 0.7s var(--p360-ease-expressive);
+  will-change: opacity, transform;
+}
+
+html.reveal-ready:not(.reveal-static) [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+// Staggered children: each direct child eases in slightly after the previous.
+html.reveal-ready:not(.reveal-static) [data-reveal-stagger] > * {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.6s var(--p360-ease-expressive),
+    transform 0.6s var(--p360-ease-expressive);
+}
+html.reveal-ready:not(.reveal-static) [data-reveal-stagger].is-revealed > * {
+  opacity: 1;
+  transform: none;
+}
+@for $i from 1 through 8 {
+  html.reveal-ready:not(.reveal-static) [data-reveal-stagger].is-revealed > *:nth-child(#{$i}) {
+    transition-delay: #{$i * 0.06}s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html [data-reveal],
+  html [data-reveal-stagger] > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+// Utility: visually hidden but available to screen readers.
+.p360-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

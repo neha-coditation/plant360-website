@@ -1,0 +1,100 @@
+.hero {
+  position: relative;
+  background: var(--p360-bg);
+  color: var(--p360-text);
+  overflow: hidden;
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#1f1f1f 1px, transparent 1px),
+    linear-gradient(90deg, #1f1f1f 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: 0.5;
+  mask-image: radial-gradient(ellipse 80% 70% at 70% 30%, #000, transparent);
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 70% 30%, #000, transparent);
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+  min-height: 600px;
+  padding-block: clamp(56px, 9vw, 84px) clamp(64px, 10vw, 96px);
+}
+
+.copy {
+  max-width: 620px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--p360-font-mono);
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--p360-accent-40);
+  margin: 0 0 26px;
+}
+
+.eyebrowDash {
+  width: 28px;
+  height: 1px;
+  background: var(--p360-accent-40);
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.h1 {
+  font-size: clamp(38px, 4.8vw, 64px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 26px;
+}
+
+.accent {
+  color: var(--p360-accent-40);
+}
+
+.lead {
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--p360-text-secondary);
+  max-width: 585px;
+  margin: 0 0 38px;
+  font-weight: 300;
+
+  strong {
+    color: var(--p360-text);
+    font-weight: 500;
+  }
+  em {
+    font-style: normal;
+    color: var(--p360-accent-40);
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.visual {
+  min-width: 0;
+}
+
+@media (min-width: 1056px) {
+  .inner {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 56px;
+  }
+}

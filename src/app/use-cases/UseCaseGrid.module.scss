@@ -1,0 +1,72 @@
+// Use-case card grid. Adapts to the parent Section tone via --sf-* vars.
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--sf-border);
+  border: 1px solid var(--sf-border);
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--sf-surface);
+  padding: 30px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.num {
+  font-family: var(--p360-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--sf-accent-text);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--sf-fg);
+  margin: 0;
+}
+
+.desc {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--sf-muted);
+  margin: 0;
+}
+
+.foot {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--sf-border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.runs {
+  font-family: var(--p360-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--sf-faint);
+}
+
+.runsName {
+  color: var(--sf-fg);
+}
+
+.metric {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--sf-accent-text);
+}

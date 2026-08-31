@@ -1,0 +1,47 @@
+# Plant360.AI
+
+> Plant360.AI is the full-stack industrial data and AI platform for process plants (oil and gas, chemicals, energy, manufacturing). It turns engineering drawings and existing records into one living data foundation, then runs AI agents on top, for 50%+ efficiency end to end.
+
+Plant360 connects four layers in one pipeline so documents become data and data becomes working AI agents. The key difference: it produces both an authoritative, audit-ready system of record AND a living asset knowledge graph, always in sync, from a single digitization pipeline, with no duplication and no vendor lock-in.
+
+## Platform (four connected layers)
+
+- [Convert](https://plant360.ai/platform/convert): Digitize CAD, DWG, and legacy or scanned PDF drawings into audit-ready Smart Drawings with human-in-the-loop AI. 70% faster at 50% lower cost.
+- [UniGraph](https://plant360.ai/platform/unigraph): Unify P&IDs, datasheets, and system-of-record data into one living asset knowledge graph, kept continuously in sync. 10x faster retrieval, 80% less manual hunting.
+- [AI360](https://plant360.ai/platform/ai360): Drag-and-drop platform to build and deploy industrial AI agents on your own graph in days, with pre-built integrations.
+- [ChangeIQ](https://plant360.ai/platform/changeiq): AI-powered Management of Change. Auto-assembled MoC packages, risk review routing, approval workflows, full audit trail. 40%+ less MoC prep time.
+- [Platform overview](https://plant360.ai/platform)
+
+## Why Plant360
+
+- [Why Plant360.AI](https://plant360.ai/why-plant360): The trade-off other tools force, the four-layer completeness argument, and how Plant360 keeps a live system of record and a queryable AI graph in sync from one pipeline.
+
+## Solutions
+
+- [Digital Transformation](https://plant360.ai/solutions/digital-transformation)
+- [Digital Twin Implementation](https://plant360.ai/solutions/digital-twin)
+- [Digitization](https://plant360.ai/solutions/digitization)
+- [Reliability and Maintenance](https://plant360.ai/solutions/reliability-maintenance)
+- [Operational Efficiency](https://plant360.ai/solutions/operational-efficiency)
+- [Asset Data Platform](https://plant360.ai/solutions/asset-data-platform)
+
+## Use-cases and agents
+
+- [Use-cases](https://plant360.ai/use-cases): Digital twin and operator simulation data, EAM/CMMS data sync, PTW and Control of Work, HAZOP and compliance analysis, operations and maintenance workflows, and automated Management of Change with ChangeIQ.
+
+## Company and resources
+
+- [About](https://plant360.ai/company/about)
+- [Careers](https://plant360.ai/company/careers)
+- [News](https://plant360.ai/company/news)
+- [Blog](https://plant360.ai/resources/blog)
+- [Newsletter](https://plant360.ai/resources/newsletter)
+- [Contact / Book a demo](https://plant360.ai/contact)
+
+## Proof points
+
+- 83,000+ engineering drawings digitized
+- 250,000+ datasheets and specifications digitized
+- ISO 27001 certified
+- Open API, no vendor lock-in
+- Works with the CAD and asset systems customers already run

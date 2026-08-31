@@ -1,0 +1,72 @@
+.frame {
+  border: 1px solid var(--sf-border);
+  background: var(--sf-surface);
+  padding: 22px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--p360-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sf-faint);
+  margin-bottom: 16px;
+}
+
+.headFlow {
+  color: var(--sf-accent-text);
+}
+
+.layers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.layer {
+  position: relative;
+  border: 1px solid var(--sf-border);
+  background: var(--sf-surface-2);
+  padding: 14px 16px 14px 40px;
+}
+
+.dot {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: var(--sf-faint);
+}
+
+.active {
+  border-color: var(--p360-accent);
+  background: linear-gradient(90deg, rgba(15, 98, 254, 0.14), var(--sf-surface-2) 62%);
+
+  .dot {
+    background: var(--p360-accent);
+    box-shadow: 0 0 12px 2px rgba(15, 98, 254, 0.55);
+  }
+  .layerTag {
+    color: var(--sf-accent-text);
+  }
+}
+
+.layerTag {
+  font-family: var(--p360-font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sf-faint);
+  margin-bottom: 3px;
+}
+
+.layerName {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--sf-fg);
+}

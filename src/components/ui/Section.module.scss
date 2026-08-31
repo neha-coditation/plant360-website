@@ -1,0 +1,67 @@
+.section {
+  position: relative;
+}
+
+.inner {
+  padding-block: clamp(64px, 9vw, 96px);
+}
+
+// Dark band (Carbon gray 100). Default tone.
+.dark {
+  background: var(--p360-bg);
+  color: var(--p360-text);
+  --sf-fg: #f4f4f4;
+  --sf-muted: #c6c6c6;
+  --sf-faint: #8d8d8d;
+  --sf-border: #393939;
+  --sf-border-subtle: #2a2a2a;
+  --sf-surface: #1f1f1f;
+  --sf-surface-2: #202020;
+  --sf-eyebrow: #78a9ff;
+  --sf-accent-text: #78a9ff;
+}
+
+// White band.
+.light {
+  background: var(--p360-light-bg);
+  color: var(--p360-light-text);
+  --sf-fg: #161616;
+  --sf-muted: #525252;
+  --sf-faint: #6f6f6f;
+  --sf-border: #e0e0e0;
+  --sf-border-subtle: #e0e0e0;
+  --sf-surface: #f9f9f9;
+  --sf-surface-2: #f4f4f4;
+  --sf-eyebrow: #0f62fe;
+  --sf-accent-text: #0f62fe;
+}
+
+// Light gray band.
+.gray {
+  background: var(--p360-light-bg-alt);
+  color: var(--p360-light-text);
+  --sf-fg: #161616;
+  --sf-muted: #525252;
+  --sf-faint: #6f6f6f;
+  --sf-border: #e0e0e0;
+  --sf-border-subtle: #e0e0e0;
+  --sf-surface: #ffffff;
+  --sf-surface-2: #f9f9f9;
+  --sf-eyebrow: #0f62fe;
+  --sf-accent-text: #0f62fe;
+}
+
+// Accent (Blue 60) band.
+.accent {
+  background: var(--p360-accent);
+  color: #fff;
+  --sf-fg: #ffffff;
+  --sf-muted: #d0e2ff;
+  --sf-faint: #a6c8ff;
+  --sf-border: rgba(255, 255, 255, 0.28);
+  --sf-border-subtle: rgba(255, 255, 255, 0.18);
+  --sf-surface: rgba(255, 255, 255, 0.08);
+  --sf-surface-2: rgba(255, 255, 255, 0.12);
+  --sf-eyebrow: #d0e2ff;
+  --sf-accent-text: #ffffff;
+}

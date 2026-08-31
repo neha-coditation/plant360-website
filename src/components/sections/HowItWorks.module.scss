@@ -1,0 +1,168 @@
+.section {
+  background: var(--p360-light-bg-alt);
+  color: var(--p360-light-text);
+}
+
+.inner {
+  padding-block: clamp(64px, 9vw, 96px);
+}
+
+.eyebrow {
+  font-family: var(--p360-font-mono);
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--p360-accent);
+  margin: 0 0 22px;
+}
+
+.heading {
+  font-size: clamp(26px, 3.4vw, 44px);
+  font-weight: 300;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  margin: 0 0 56px;
+  max-width: 760px;
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--p360-light-border);
+  border: 1px solid var(--p360-light-border);
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.step {
+  background: var(--p360-light-bg);
+  padding: 40px 32px;
+}
+
+.stepNum {
+  display: block;
+  font-family: var(--p360-font-mono);
+  font-size: 13px;
+  color: var(--p360-light-text-faint);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.panel {
+  position: relative;
+  height: 88px;
+  border: 1px solid var(--p360-light-border);
+  background: var(--p360-light-bg-subtle);
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.scanPanel {
+  padding: 15px 16px;
+}
+
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  span {
+    height: 5px;
+    background: #d0d0d0;
+    display: block;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      background: var(--p360-light-border);
+    }
+  }
+}
+
+.scanLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 6%;
+  height: 2px;
+  background: var(--p360-accent);
+  box-shadow: 0 0 10px 1px rgba(15, 98, 254, 0.55);
+  animation: p360scan 2.6s ease-in-out infinite;
+}
+
+.scanTag {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  font-family: var(--p360-font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--p360-accent);
+}
+
+.graphPanel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dash {
+  animation: p360dash 1.6s linear infinite;
+}
+
+.logPanel {
+  min-height: 88px;
+  height: auto;
+  background: var(--p360-bg);
+  border-color: var(--p360-bg);
+  padding: 13px 15px;
+  font-family: var(--p360-font-mono);
+  font-size: 10.5px;
+  line-height: 1.95;
+  color: var(--p360-text-muted);
+}
+
+.logLine {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ok {
+  color: var(--p360-success);
+}
+
+.agent {
+  color: var(--p360-accent-40);
+}
+
+.cursor {
+  display: inline-block;
+  width: 7px;
+  height: 12px;
+  background: var(--p360-accent-40);
+  margin-left: 6px;
+  vertical-align: middle;
+  animation: p360blink 1.1s step-end infinite;
+}
+
+.stepTitle {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0 0 12px;
+  color: var(--p360-light-text);
+}
+
+.stepBody {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--p360-light-text-secondary);
+  margin: 0;
+}

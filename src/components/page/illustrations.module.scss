@@ -1,0 +1,290 @@
+.frame {
+  position: relative;
+  border: 1px solid var(--p360-border);
+  background: linear-gradient(180deg, #1d1d1d, #161616);
+  padding: 22px;
+}
+
+.frameHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.frameLabel {
+  font-family: var(--p360-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--p360-text-helper);
+}
+
+.frameStatus {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--p360-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--p360-accent-40);
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--p360-success);
+  box-shadow: 0 0 9px 1px rgba(66, 190, 101, 0.85);
+  animation: p360pulse 1.8s ease-in-out infinite;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.edge {
+  stroke-dasharray: 4 4;
+  animation: p360dash 1.6s linear infinite;
+}
+
+.node {
+  animation: p360pulse 2.4s ease-in-out infinite;
+}
+
+.hub {
+  filter: drop-shadow(0 0 8px rgba(15, 98, 254, 0.7));
+  animation: p360glow 3s ease-in-out infinite;
+}
+
+.caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--p360-border-subtle);
+  font-family: var(--p360-font-mono);
+  font-size: 11px;
+  color: var(--p360-text-helper);
+}
+
+.captionAccent {
+  color: var(--p360-accent-40);
+}
+
+// ---- Integrations hub ----
+.hub2 {
+  text-align: center;
+  padding: 8px 0 4px;
+}
+
+.hubCore {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border: 1px solid var(--p360-accent);
+  background: linear-gradient(90deg, #1c2742, #202020 62%);
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 18px;
+  box-shadow: 0 0 20px 2px rgba(15, 98, 254, 0.25);
+}
+
+.spokes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.spoke {
+  border: 1px solid var(--p360-border);
+  background: var(--p360-layer-01);
+  padding: 8px 12px;
+  font-size: 12.5px;
+  color: var(--p360-text-secondary);
+  transition:
+    border-color 0.18s var(--p360-ease-productive),
+    transform 0.18s var(--p360-ease-productive);
+
+  &:hover {
+    border-color: var(--p360-accent-40);
+    transform: translateY(-2px);
+  }
+}
+
+// ---- Convert motif ----
+.convert {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.drawing {
+  position: relative;
+  border: 1px solid var(--p360-border);
+  background: var(--p360-layer);
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  overflow: hidden;
+  min-height: 120px;
+
+  span {
+    height: 5px;
+    background: #3a3a3a;
+    display: block;
+  }
+}
+
+.scan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 6%;
+  height: 2px;
+  background: var(--p360-accent);
+  box-shadow: 0 0 10px 1px rgba(15, 98, 254, 0.6);
+  animation: p360scan 2.8s ease-in-out infinite;
+}
+
+.arrow {
+  color: var(--p360-border-strong);
+  font-size: 18px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rowItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--p360-border);
+  background: var(--p360-layer-01);
+  padding: 9px 11px;
+  font-family: var(--p360-font-mono);
+  font-size: 11px;
+  color: var(--p360-text-secondary);
+}
+
+.tick {
+  color: var(--p360-success);
+}
+
+// ---- AI360 flow ----
+.flow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 8px 0;
+  background-image: radial-gradient(var(--p360-border) 1px, transparent 1px);
+  background-size: 16px 16px;
+  padding: 20px 8px;
+}
+
+.flowNode {
+  border: 1px solid var(--p360-border);
+  background: var(--p360-layer-01);
+  color: var(--p360-text);
+  padding: 12px 16px;
+  font-size: 13px;
+}
+
+.flowAgent {
+  border-color: var(--p360-accent);
+  color: #fff;
+  box-shadow: 0 0 16px 1px rgba(15, 98, 254, 0.35);
+  animation: p360glow 3.2s ease-in-out infinite;
+}
+
+.flowLink {
+  width: 22px;
+  height: 1px;
+  background: var(--p360-accent-40);
+}
+
+.flowActions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  span {
+    font-family: var(--p360-font-mono);
+    font-size: 11px;
+    color: var(--p360-text-secondary);
+    border-left: 2px solid var(--p360-accent);
+    padding: 4px 10px;
+    background: var(--p360-layer);
+  }
+}
+
+// ---- ChangeIQ revisions ----
+.revs {
+  display: grid;
+  gap: 10px;
+}
+
+.revCard {
+  border: 1px solid var(--p360-border);
+  background: var(--p360-layer-01);
+  padding: 12px 14px;
+}
+
+.revCurrent {
+  border-color: var(--p360-accent);
+}
+
+.revTag {
+  font-family: var(--p360-font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--p360-accent-40);
+}
+
+.revLines {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+
+  span {
+    height: 5px;
+    background: #3a3a3a;
+    display: block;
+  }
+}
+
+.revChange {
+  background: var(--p360-accent) !important;
+}
+
+.changeLog {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--p360-font-mono);
+  font-size: 11px;
+  color: var(--p360-text-secondary);
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}

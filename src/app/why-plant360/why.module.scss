@@ -1,0 +1,91 @@
+// Local blocks for the Why Plant360 page. Both read the contextual --sf-*
+// vars set by the parent Section wrapper, so they adapt to any band.
+
+// ---- Tag / chip row ----
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--sf-fg);
+  background: var(--sf-surface);
+  border: 1px solid var(--sf-border);
+  transition:
+    background 0.2s var(--p360-ease-productive),
+    transform 0.2s var(--p360-ease-productive);
+
+  &:hover {
+    background: var(--sf-surface-2);
+    transform: translateY(-2px);
+  }
+}
+
+.chipMark {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  background: var(--sf-accent-text);
+}
+
+// ---- Story cards ----
+.stories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--sf-border);
+  border: 1px solid var(--sf-border);
+  margin-top: 40px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.story {
+  background: var(--sf-surface);
+  padding: 30px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-top: 2px solid var(--p360-accent);
+  transition:
+    background 0.2s var(--p360-ease-productive),
+    transform 0.2s var(--p360-ease-productive);
+
+  &:hover {
+    background: var(--sf-surface-2);
+    transform: translateY(-3px);
+  }
+}
+
+.storyProduct {
+  font-family: var(--p360-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sf-accent-text);
+}
+
+.storyCompany {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--sf-fg);
+  margin: 0;
+}
+
+.storyOutcome {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--sf-muted);
+  margin: 0;
+}

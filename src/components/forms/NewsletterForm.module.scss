@@ -1,0 +1,111 @@
+// Newsletter form. Native inputs styled against the --sf-* tone vars so the
+// form adapts to whichever Section band it sits in.
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 420px;
+}
+
+.label {
+  font-family: var(--p360-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sf-faint);
+}
+
+.input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  color: var(--sf-fg);
+  background: var(--sf-surface);
+  border: 1px solid var(--sf-border);
+  border-radius: 0;
+  outline: none;
+  transition: border-color 0.15s var(--p360-ease-productive);
+
+  &::placeholder {
+    color: var(--sf-faint);
+  }
+
+  &:focus {
+    border-color: var(--sf-accent-text);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+  }
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.button {
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  background: var(--p360-accent);
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s var(--p360-ease-productive);
+
+  &:hover:not(:disabled) {
+    background: var(--p360-accent-hover, var(--p360-accent));
+  }
+
+  &:disabled {
+    opacity: 0.65;
+    cursor: default;
+  }
+}
+
+.help {
+  font-size: 13px;
+  color: var(--sf-faint);
+  margin: 4px 0 0;
+}
+
+.error {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--sf-fg);
+  margin: 4px 0 0;
+}
+
+.errorLink {
+  color: var(--sf-accent-text);
+  text-underline-offset: 3px;
+}
+
+.notice {
+  max-width: 420px;
+  border: 1px solid var(--sf-border);
+  border-left: 3px solid var(--p360-accent);
+  background: var(--sf-surface);
+  padding: 24px 26px;
+}
+
+.noticeTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--sf-fg);
+  margin: 0 0 8px;
+}
+
+.noticeBody {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--sf-muted);
+  margin: 0;
+}

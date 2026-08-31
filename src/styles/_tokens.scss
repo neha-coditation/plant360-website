@@ -1,0 +1,77 @@
+// Plant360 design tokens. Palette mirrors IBM Carbon Gray 100 (values extracted
+// from the approved reference). Exposed as CSS custom properties so both custom
+// marketing components and Carbon components share one accent.
+
+:root {
+  // Grayscale (Carbon gray 100 ramp)
+  --p360-bg: #161616;
+  --p360-bg-hover: #1c1c1c;
+  --p360-layer: #1f1f1f;
+  --p360-layer-01: #202020;
+  --p360-layer-02: #262626;
+  --p360-border-subtle: #2a2a2a;
+  --p360-border: #393939;
+  --p360-border-strong: #525252;
+  --p360-text-helper: #6f6f6f;
+  --p360-text-placeholder: #8d8d8d;
+  --p360-text-muted: #a8a8a8;
+  --p360-text-secondary: #c6c6c6;
+  --p360-text-soft: #e0e0e0;
+  --p360-text: #f4f4f4;
+  --p360-white: #ffffff;
+
+  // Accent (Blue 60) and support
+  --p360-accent: #0f62fe;
+  --p360-accent-hover: #0353e9;
+  --p360-accent-40: #78a9ff;
+  --p360-accent-30: #a6c8ff;
+  --p360-accent-20: #d0e2ff;
+  --p360-success: #42be65;
+  --p360-error: #da1e28;
+
+  // Light-surface palette (for the alternating white / gray sections that the
+  // reference uses between dark sections). Values are Carbon gray 10 ramp.
+  --p360-light-bg: #ffffff;
+  --p360-light-bg-alt: #f4f4f4;
+  --p360-light-bg-subtle: #f9f9f9;
+  --p360-light-border: #e0e0e0;
+  --p360-light-border-strong: #c6c6c6;
+  --p360-light-text: #161616;
+  --p360-light-text-secondary: #525252;
+  --p360-light-text-helper: #6f6f6f;
+  --p360-light-text-muted: #8d8d8d;
+  --p360-light-text-faint: #a8a8a8;
+
+  // Type
+  --p360-font-sans: var(--font-plex-sans), "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --p360-font-mono: var(--font-plex-mono), "IBM Plex Mono", ui-monospace, monospace;
+
+  // Layout
+  --p360-maxw: 1280px;
+  --p360-gutter: 32px;
+  --p360-header-h: 64px;
+  --p360-announce-h: 40px;
+
+  // Motion (Carbon-aligned)
+  --p360-ease-productive: cubic-bezier(0.2, 0, 0.38, 0.9);
+  --p360-ease-expressive: cubic-bezier(0.4, 0.14, 0.3, 1);
+
+  // Contextual "surface foreground" tiers. Set per-tone by the Section wrapper
+  // so shared page blocks (headings, cards, FAQ) adapt to dark / light / accent
+  // bands automatically. Defaults here are the dark-band values.
+  --sf-fg: #f4f4f4;
+  --sf-muted: #c6c6c6;
+  --sf-faint: #8d8d8d;
+  --sf-border: #393939;
+  --sf-border-subtle: #2a2a2a;
+  --sf-surface: #1f1f1f;
+  --sf-surface-2: #202020;
+  --sf-eyebrow: #78a9ff;
+  --sf-accent-text: #78a9ff;
+}
+
+@media (max-width: 672px) {
+  :root {
+    --p360-gutter: 20px;
+  }
+}

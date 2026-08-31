@@ -1,0 +1,520 @@
+
+
+
+
+
+[STYLE]
+[STYLE]
+[SCRIPT]
+
+
+
+## ANNOUNCEMENT BAR
+
+
+New &nbsp;·&nbsp; ChangeIQ cuts Management of Change prep by 40%+ &nbsp; See it in action&nbsp;→ 
+
+
+
+## HEADER
+
+
+
+
+Platform 
+Why Plant360 
+How it works 
+Use-cases 
+Integrations 
+Company 
+
+Book a demo → 
+
+
+
+## HERO
+
+
+
+
+
+The full-stack industrial data &amp; AI platform 
+Keep your system of record live, and turn it into working AI agents . 
+Plant360 builds one living data foundation from your CAD, DWG and PDF drawings and the data already in your systems of record . It keeps that engineering data current and powers AI agents across engineering, operations and safety: 50%+ efficiency , end to end. 
+
+Book a demo → 
+See the platform → 
+
+
+
+
+## HERO STACK VISUAL
+
+
+
+
+PLANT360 PLATFORM 
+ONE STACK · LIVE 
+
+
+
+## rising data conduit
+
+
+
+
+
+## 04 APPLY (outcome, accent)
+
+
+04 · APPLY 
+AI Apps &amp; Agents 
+ChangeIQ, HAZOP, MTR, asset agents 
+
+
+## 03 BUILD
+
+
+03 · BUILD 
+AI360 
+Rapid industrial AI-agent platform 
+
+
+## 02 FOUNDATION
+
+
+02 · FOUNDATION 
+UniGraph 
+Live system of record + asset graph 
+
+
+## 01 SOURCES: two feeds
+
+
+01 · SOURCES · WE INGEST BOTH 
+
+
+Convert 
+CAD · DWG · PDF drawings 
+
+
+Connect 
+Existing records &amp; design 
+
+
+
+
+
+TWO SOURCES → ONE FOUNDATION DATA FLOWS UP ↑ 
+
+
+
+
+
+
+
+## LOGO / PROOF STRIP
+
+
+
+
+## POSITIONING / PROBLEM
+
+
+
+
+Not another point solution 
+Industrial AI fails without a data foundation. Most vendors give you one layer. Plant360 gives you the whole stack. 
+Digitization tools leave you with drawings. Graph tools leave you with data. AI tools have nothing reliable to run on. Plant360 connects all four layers, so your documents become data, your data becomes agents, and your agents deliver measurable efficiency. No silos. No vendor lock-in. 
+
+
+
+POINT SOLUTIONS 
+
+Digitization tool 
+✕ NO CONNECTION 
+Graph tool 
+✕ NO CONNECTION 
+AI pilot 
+
+STALLS AT PILOT 
+
+
+PLANT360 · ONE STACK 
+
+
+Digitize 
+Structure 
+Build 
+Apply · AI agents 
+
+COMPOUNDS IN PRODUCTION 
+
+
+
+
+
+
+## DIFFERENTIATOR: WE DO BOTH
+
+
+
+The Plant360 difference 
+Don't choose between your system of record and your AI. Plant360 does both. 
+Most tools force a trade-off. Digitize into your system of record and engineers stay current, but AI has nothing structured to reason on. Build a separate knowledge graph and the AI works, but your records quietly drift out of date. Plant360 produces both, from one pipeline , working from your CAD, DWG and PDF drawings, or the data already in your existing systems of record. 
+
+
+## DIAGRAM: sources -> convert -> both outputs
+
+
+## SOURCES
+
+INGEST FROM 
+
+CAD files 
+DWG drawings 
+PDF drawings EVEN SCANNED 
+Datasheets &amp; specs 
+Existing records / design data 
+
+Not just DWGs. Plant360 reads the legacy and scanned PDFs that lock most of your plant's knowledge in place, and ingests the data already living in your systems of record. 
+
+
+## CONVERT CONNECTOR
+
+
+→ 
+INGEST 
+→ 
+
+
+
+## OUTPUTS
+
+PRODUCES BOTH · IN SYNC 
+
+
+▤ System of Record / Design 
+Your authoritative engineering data: drawings, tags and datasheets, kept continuously current and audit-ready. No drift, no stale copies. 
+
+
+⬡ Asset Knowledge Graph 
+A living, queryable graph of every asset and relationship: the structured context your AI agents reason and act on. 
+
+
+
+
+
+## BENEFITS TRIAD
+
+
+01 
+Records that never drift 
+Engineers keep working in the system of record and design they already trust. Plant360 keeps it accurate automatically as the plant changes. 
+
+
+02 
+AI with real context 
+Agents act on a connected asset graph instead of scattered files, so automation is accurate, explainable and grounded in your actual plant. 
+
+
+03 
+One pipeline, zero duplication 
+Both outputs come from a single digitization of CAD, DWG and PDF. No parallel data programs, no divergence between what's recorded and what your AI sees. 
+
+
+
+
+
+## PLATFORM: 4 LAYERS
+
+
+
+The platform · four connected layers 
+DIGITIZE → STRUCTURE → BUILD → APPLY 
+
+
+
+01 ▤ 
+CONVERT 
+Digitize 
+Convert CAD, DWG and even legacy PDF files into intelligent Smart Drawings with human-in-the-loop AI, lossless and audit-ready. 
+70% faster · 50% lower cost 
+
+
+02 ⬡ 
+UNIGRAPH 
+Structure 
+P&amp;IDs, datasheets and data from your existing systems of record unified into one living knowledge graph, kept continuously in sync. 
+10× retrieval · 80% less hunting 
+
+
+03 ◈ 
+AI360 
+Build 
+Drag-and-drop platform to build and deploy industrial AI agents on your own graph in days, with pre-built integrations. 
+Agents in days, not months 
+
+
+04 ◆ 
+AI APPS &amp; AGENTS 
+Apply 
+Production apps like ChangeIQ plus agents for HAZOP, Master Tag Registry and asset management. Real use-cases, live. 
+50%+ efficiency, end to end 
+
+
+
+
+
+
+PLANT360 · PRODUCT UNIGRAPH WORKSPACE 
+
+
+
+
+## HOW IT WORKS / DATA-TO-AI FLOW
+
+
+How it works 
+From document-driven workflows to data-driven, AI-first operations. 
+
+
+STEP 01 
+
+
+
+
+
+
+
+
+SCANNING 
+
+Capture &amp; digitize 
+Drawings, datasheets and specs are ingested and converted to structured Smart Drawings, with human-in-the-loop verification for accuracy. 
+
+
+STEP 02 
+
+
+
+
+
+
+
+
+
+Sync records &amp; connect 
+UniGraph keeps your system of record and design continuously in sync, and links every tag, asset and document into one queryable knowledge graph your AI can trust. 
+
+
+STEP 03 
+
+✓ MoC package · 14 assets 
+✓ Risk review routed 
+agent monitoring graph 
+
+Deploy AI agents 
+Build agents and apps on AI360 that act on the graph, automating MoC, HAZOP, tag registries and more across engineering, ops and safety. 
+
+
+
+
+
+## USE-CASES (INTERACTIVE)
+
+
+
+
+AI use-cases &amp; agents 
+The AI isn't hidden in a roadmap. It's running real plant work today. 
+
+All use-cases → 
+
+
+
+
+
+01 
+Accelerate Digital Twin &amp; Operator Simulation 
+
+
+
+02 
+Automated Data Sync &amp; Resolution for EAM, CMMS 
+
+
+
+03 
+Reduce errors in PTW / Control of Work 
+
+
+
+04 
+Automate Safety &amp; Compliance Analysis 
+
+
+
+05 
+Automate Operations &amp; Maintenance Workflows 
+
+
+
+06 
+Automated Management of Change 
+
+
+
+
+
+
+
+
+
+
+
+{{ ucProduct }} 
+{{ ucTitle }} 
+{{ ucDesc }} 
+
+
+RUNS ON 
+{{ ucAgent }} 
+
+
+IMPACT 
+{{ ucMetric }} 
+
+
+
+
+
+
+
+## OUTCOMES / METRICS
+
+
+Outcomes 
+Measurable efficiency, proven across the plant. 
+
+50 %+ Efficiency gains across engineering, operations &amp; safety 
+70 % Faster drawing digitization at 50% lower cost 
+10 × Faster engineering data retrieval, 80% less manual hunting 
+40 %+ Less Management of Change prep time with ChangeIQ 
+
+
+
+{{ drawings }} + 
+ENGINEERING DRAWINGS DIGITIZED 
+
+
+{{ datasheets }} + 
+DATASHEETS &amp; SPECS DIGITIZED 
+
+
+
+
+
+## INTEGRATIONS
+
+
+
+
+Integrations 
+Your existing tools are inputs , not the platform. 
+Plant360 ingests from the systems you already run and pushes structured data back out through an open API. You own the data layer. No proprietary lock-in to any single CAD or asset vendor. 
+
+
+
+INGESTS FROM &amp; SYNCS WITH 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Drag &amp; drop each vendor's licensed logo into its slot 
+
+
+
+
+
+## CTA
+
+
+
+Ready to turn your plant's documents into AI agents? 
+See the full stack on your own drawings. A 30-minute demo shows digitize → graph → agent, end to end. 
+
+
+Book a demo → 
+Talk to engineering → 
+
+
+
+
+## FOOTER
+
+
+
+
+
+The full-stack industrial data &amp; AI platform, from digitization to working agents. 
+
+in 
+X 
+
+
+
+ISO 27001 CERTIFIED ENTERPRISE-GRADE SECURITY &amp; GOVERNANCE 
+
+
+
+PLATFORM 
+
+Convert 
+UniGraph 
+AI360 
+ChangeIQ 
+
+
+
+COMPANY 
+
+About us 
+Blog 
+Use-cases 
+
+
+
+RESOURCES 
+
+Contact 
+Privacy policy 
+Terms of service 
+
+
+
+
+© Plant360.AI 2026. All rights reserved. 
+DESIGN SYSTEM: IBM CARBON 
+
+
+
+
+
+[SCRIPT]

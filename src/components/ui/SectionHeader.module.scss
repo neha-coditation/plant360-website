@@ -1,0 +1,28 @@
+.wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 62ch;
+}
+
+.center {
+  justify-content: center;
+  text-align: center;
+
+  .head {
+    align-items: center;
+    margin-inline: auto;
+  }
+}
+
+.action {
+  flex-shrink: 0;
+}

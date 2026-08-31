@@ -1,0 +1,47 @@
+// News list. Reads the contextual --sf-* vars set by the Section wrapper so it
+// adapts to whatever tone the parent Section uses.
+
+.list {
+  display: grid;
+  gap: 1px;
+  background: var(--sf-border);
+  border: 1px solid var(--sf-border);
+}
+
+.item {
+  background: var(--sf-surface);
+  padding: 30px 28px;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+.date {
+  font-family: var(--p360-font-mono);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--sf-faint);
+  margin: 0;
+  padding-top: 4px;
+}
+
+.title {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--sf-fg);
+  margin: 0 0 10px;
+}
+
+.excerpt {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--sf-muted);
+  margin: 0;
+  max-width: 74ch;
+}

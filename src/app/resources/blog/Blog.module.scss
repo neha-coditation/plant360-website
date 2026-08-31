@@ -1,0 +1,159 @@
+// Tone-adaptive blog styles. All colors read the --sf-* vars set by the parent
+// Section, so cards and chips work on any band.
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+
+.chip {
+  font-family: var(--p360-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sf-muted);
+  background: var(--sf-surface);
+  border: 1px solid var(--sf-border);
+  border-radius: 999px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: color 0.15s var(--p360-ease-productive), border-color 0.15s var(--p360-ease-productive);
+
+  &:hover {
+    color: var(--sf-accent-text);
+    border-color: var(--sf-accent-text);
+  }
+}
+
+.chipActive {
+  color: var(--sf-accent-text);
+  border-color: var(--sf-accent-text);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--sf-border);
+  border: 1px solid var(--sf-border);
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--sf-surface);
+  padding: 30px 28px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: background 0.15s var(--p360-ease-productive);
+
+  &:hover {
+    background: var(--sf-surface-2);
+  }
+}
+
+.cardCategory {
+  font-family: var(--p360-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sf-accent-text);
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--sf-fg);
+  margin: 0;
+}
+
+.cardExcerpt {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--sf-muted);
+  margin: 0;
+  flex: 1;
+}
+
+.cardMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  align-items: center;
+  font-size: 12.5px;
+  color: var(--sf-faint);
+  border-top: 1px solid var(--sf-border);
+  padding-top: 16px;
+}
+
+.cardMetaSep {
+  color: var(--sf-border);
+}
+
+// Post body: table of contents shown above the Prose article.
+.toc {
+  border: 1px solid var(--sf-border);
+  border-left: 3px solid var(--p360-accent);
+  background: var(--sf-surface);
+  padding: 22px 26px;
+  margin-bottom: 40px;
+  max-width: 720px;
+}
+
+.tocTitle {
+  font-family: var(--p360-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sf-faint);
+  margin: 0 0 14px;
+}
+
+.tocList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tocLink {
+  color: var(--sf-accent-text);
+  text-decoration: none;
+  font-size: 14.5px;
+  line-height: 1.4;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+// Small meta line under the hero lead (author, date, reading time).
+.postMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  margin-top: 20px;
+  font-family: var(--p360-font-mono);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--sf-faint);
+}
+
+.postMetaSep {
+  opacity: 0.5;
+}
