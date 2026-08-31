@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LogoLinkedin, LogoX, Security } from "@carbon/icons-react";
+import { LogoLinkedin, LogoX } from "@carbon/icons-react";
 import { footerColumns, site } from "@/lib/site";
 import { Logo } from "@/components/ui/Logo";
 import styles from "./Footer.module.scss";
